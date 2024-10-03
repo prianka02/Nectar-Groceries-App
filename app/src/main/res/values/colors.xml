@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#53B175</color>
+    <color name="google_background">#4285F4</color>
+    <color name="facebook_background">#4A66AC</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="underline_color">#E2E2E2</color>
+    <color name="prefix_color_text">#030303</color>
+    <color name="social_auth_txt_color">#FCFCFC</color>
+
+</resources>

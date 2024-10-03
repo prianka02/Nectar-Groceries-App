@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    tools:context=".ui.auth.VerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/blurbackground" />
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backicon"
+                android:layout_margin="30dp"
+                />
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_mobile_number"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="140dp"
+                android:textSize="26sp"
+                android:fontFamily="@font/montserratsemibold"
+                android:textColor="#181725"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_title"
+                android:text="Mobile Number"
+                android:textSize="16sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="24dp"
+                />
+        </RelativeLayout>
+        <!--     Phone Number Input with Flag -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            >
+            <!-- Country Flag -->
+            <ImageView
+                android:id="@+id/country_flag"
+                android:layout_width="33.97dp"
+                android:layout_height="23.7dp"
+                android:src="@drawable/flag"
+                android:contentDescription="@string/country_flag"/>
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/prefix_color_text"
+                android:text="@string/_880"
+                android:layout_marginStart="10dp"
+                />
+
+            <!-- Phone Number Input Field -->
+            <EditText
+                android:id="@+id/mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="39.55dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:background="@drawable/custom_edittext_bg"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#E2E2E2" />
+    </LinearLayout>
+    <ImageView
+        android:fitsSystemWindows="true"
+        android:id="@+id/floating_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/floatingnext"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

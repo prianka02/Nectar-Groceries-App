@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Nectar</string>
+    <string name="welcome_to_store">Welcome \n to our store</string>
+    <string name="get_groceries_fast">Ger your groceries in as fast as one hour</string>
+    <string name="get_started">Get Started</string>
+    <string name="onboarding_image_description">Welcome onboarding image</string>
+    <string name="get_your_groceries_with_nectar">Get your groceries with nectar</string>
+    <string name="country_flag">Country Flag</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="_880">+880</string>
+</resources>
