@@ -48,22 +48,6 @@
         android:layout_marginRight="20dp"
         android:gravity="center_vertical"
         >
-        <!-- Country Flag -->
-        <ImageView
-            android:id="@+id/country_flag"
-            android:layout_width="33.97dp"
-            android:layout_height="23.7dp"
-            android:src="@drawable/flag"
-            android:contentDescription="@string/country_flag"/>
-        <TextView
-            android:layout_width="42dp"
-            android:layout_height="29dp"
-            android:gravity="center_vertical"
-            android:textSize="18sp"
-            android:textColor="@color/prefix_color_text"
-            android:text="+880 "
-            android:layout_marginLeft="10dp"
-            />
 
         <!-- Phone Number Input Field -->
         <EditText
