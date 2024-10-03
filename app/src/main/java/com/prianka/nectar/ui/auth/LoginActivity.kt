@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.button.MaterialButton
 import com.prianka.nectar.R
+import com.prianka.nectar.ui.home.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var loginBtn: MaterialButton
@@ -21,6 +22,11 @@ class LoginActivity : AppCompatActivity() {
 
         loginBtn = findViewById(R.id.login_btn)
         signUpTraverse = findViewById(R.id.sign_up_traverse)
+
+        loginBtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         signUpTraverse.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)

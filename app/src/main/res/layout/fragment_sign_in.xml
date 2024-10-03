@@ -9,18 +9,32 @@
         android:id="@+id/main"
         tools:context=".ui.auth.VerificationActivity"
         >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:src="@drawable/groceries"
             />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shopping_bag_logo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="25dp"
+            />
+    </RelativeLayout>
+
         <TextView
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/get_your_groceries_with_nectar"
             android:layout_margin="25dp"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:fontFamily="@font/montserratsemibold"
             android:textColor="#030303"
             />
@@ -51,14 +65,10 @@
                 />
 
             <!-- Phone Number Input Field -->
-            <EditText
-                android:id="@+id/mobile_edittext"
+            <TextView
+                android:id="@+id/mobile_textView"
                 android:layout_width="match_parent"
                 android:layout_height="39.55dp"
-                android:inputType="number"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:background="@drawable/custom_edittext_bg"
                 />
 
         </LinearLayout>
@@ -110,7 +120,7 @@
                 android:textColor="@color/social_auth_txt_color"
                 android:textAlignment="center"
                 android:fontFamily="@font/montserratregular"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:padding="10dp"
                 android:textStyle="bold"
                 />
@@ -125,7 +135,7 @@
             android:background="@drawable/facebook_background"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="15dp">
             <ImageView
                 android:layout_width="22.95dp"
                 android:layout_height="24.06dp"
@@ -139,7 +149,7 @@
                 android:textColor="@color/social_auth_txt_color"
                 android:textAlignment="center"
                 android:fontFamily="@font/montserratregular"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:padding="10dp"
                 android:textStyle="bold"
                 />

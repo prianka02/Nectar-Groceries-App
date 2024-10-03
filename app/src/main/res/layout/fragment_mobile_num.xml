@@ -16,6 +16,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
             >
             <ImageView
                 android:layout_width="match_parent"
@@ -39,7 +40,7 @@
                 android:text="@string/enter_your_mobile_number"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="140dp"
-                android:textSize="26sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/montserratsemibold"
                 android:textColor="#181725"
                 />
@@ -49,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/header_title"
                 android:text="Mobile Number"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textColor="@color/grey"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"

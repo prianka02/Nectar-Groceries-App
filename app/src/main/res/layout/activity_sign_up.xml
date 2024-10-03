@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:layout_marginTop="233dp"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:fontFamily="@font/montserratsemibold"
             android:textColor="#030303"
             />
@@ -36,7 +36,7 @@
             android:layout_below="@id/sign_up_title"
             android:text="Enter your emails and password"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/montserratsemibold"
             android:textColor="@color/grey" />
     </RelativeLayout>
@@ -55,7 +55,7 @@
             android:text="Username"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/grey" />
 
@@ -67,6 +67,7 @@
             android:inputType="text"
             android:minLines="1"
             android:hint="Enter Username"
+            android:textSize="14sp"
             android:maxLength="30"
             android:maxLines="1"
             android:background="@drawable/custom_edittext_bg"
@@ -96,7 +97,7 @@
             android:text="Email"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/grey" />
 
@@ -114,6 +115,7 @@
                 android:maxWidth="50dp"
                 android:minLines="1"
                 android:hint="Enter email address"
+                android:textSize="14sp"
                 android:maxLength="50"
                 android:maxLines="1"
                 android:background="@drawable/custom_edittext_bg"
@@ -125,7 +127,6 @@
                 android:src="@drawable/verified_email"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:visibility="invisible"
                 />
 
         </RelativeLayout>
@@ -154,33 +155,9 @@
             android:text="Password"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/grey" />
-
-        <!-- password Input Field -->
-        <!--        <EditText-->
-        <!--            android:id="@+id/password_text"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:inputType="textPassword"-->
-        <!--            android:hint="Enter password"-->
-        <!--            android:maxWidth="20dp"-->
-        <!--            android:minLines="1"-->
-        <!--            android:maxLength="8"-->
-        <!--            android:maxLines="1"-->
-        <!--            app:endIconMode="password_toggle"-->
-        <!--            app:passwordToggleDrawable="@drawable/visibilityoff"-->
-        <!--            app:passwordToggleEnabled="true"-->
-        <!--            android:background="@drawable/custom_edittext_bg"-->
-        <!--            />-->
-        <!--        <View-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="1dp"-->
-        <!--            android:layout_marginLeft="20dp"-->
-        <!--            android:layout_marginRight="20dp"-->
-        <!--            android:layout_marginTop="0dp"-->
-        <!--            android:background="#E2E2E2" />-->
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -191,6 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="39.55dp"
                 android:hint="Enter Password"
+                android:textSize="14sp"
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minLines="1"
@@ -226,7 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="By continuing you agree to our"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/grey"
             android:layout_gravity="center"/>
         <TextView
@@ -276,7 +254,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:text="Sing Up"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:fontFamily="@font/montserratsemibold"
             app:cornerRadius="19dp"
             android:backgroundTint="@color/background_color"
@@ -292,7 +270,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Already have an account? "
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:layout_gravity="center"/>
@@ -302,7 +280,7 @@
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:textStyle="bold"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textColor="@color/background_color"
                 android:layout_gravity="center"/>
 
