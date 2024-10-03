@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".ui.auth.SignUpActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/authbackgroundtop"
+            />
+        <TextView
+            android:id="@+id/sign_up_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginTop="233dp"
+            android:textSize="26sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="#030303"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_title"
+            android:text="Enter your emails and password"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/grey" />
+    </RelativeLayout>
+    <!--  Username Input layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey" />
+
+        <!-- email Input Field -->
+        <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="39.55dp"
+            android:inputType="text"
+            android:minLines="1"
+            android:hint="Enter Username"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext_bg"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#E2E2E2" />
+
+    <!--  Username Input layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey" />
+
+        <!-- email Input Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="39.55dp"
+                android:autofillHints="Email Address"
+                android:inputType="textEmailAddress"
+                android:maxWidth="50dp"
+                android:minLines="1"
+                android:hint="Enter email address"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:background="@drawable/custom_edittext_bg"
+                />
+            <ImageView
+                android:id="@+id/verified_email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/verified_email"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#E2E2E2" />
+
+    <!--    password layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey" />
+
+        <!-- password Input Field -->
+        <!--        <EditText-->
+        <!--            android:id="@+id/password_text"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:hint="Enter password"-->
+        <!--            android:maxWidth="20dp"-->
+        <!--            android:minLines="1"-->
+        <!--            android:maxLength="8"-->
+        <!--            android:maxLines="1"-->
+        <!--            app:endIconMode="password_toggle"-->
+        <!--            app:passwordToggleDrawable="@drawable/visibilityoff"-->
+        <!--            app:passwordToggleEnabled="true"-->
+        <!--            android:background="@drawable/custom_edittext_bg"-->
+        <!--            />-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:layout_marginTop="0dp"-->
+        <!--            android:background="#E2E2E2" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="39.55dp"
+                android:hint="Enter Password"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minLines="1"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_material_edittext_background"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/visibilityoff"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#E2E2E2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By continuing you agree to our"
+            android:textSize="16sp"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/terms_condition_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Terms of Service"
+            android:textSize="14sp"
+            android:textColor="@color/background_color"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" and"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/privacy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Privacy Policy."
+            android:textSize="14sp"
+            android:textColor="@color/background_color"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <!-- Info Submit Portion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bottomblurbackground"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="Sing Up"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserratsemibold"
+            app:cornerRadius="19dp"
+            android:backgroundTint="@color/background_color"
+            android:layout_margin="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/sign_up_traverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/background_color"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
