@@ -53,13 +53,11 @@ class LocationFragment : Fragment() {
         setupSpinner(spinnerAreas, areaZones)
 
 
-
 //        Location Submit Action
         submitLocation = view.findViewById(R.id.submit_location)
         submitLocation.setOnClickListener {
             navigateToLogin()
         }
-
     }
 
     private fun  navigateToLogin(){

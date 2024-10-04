@@ -9,5 +9,7 @@
     <color name="underline_color">#E2E2E2</color>
     <color name="prefix_color_text">#030303</color>
     <color name="social_auth_txt_color">#FCFCFC</color>
+    <color name="bottom_nav_color">#FFFFFF</color>
+    <color name="bottom_nav_unselected">#181725</color>
 
 </resources>

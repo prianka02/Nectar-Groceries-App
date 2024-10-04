@@ -6,4 +6,18 @@
 <!--        <item name="android:windowFullscreen">true</item>-->
 <!--        <item name="android:windowNoTitle">true</item>-->
 <!--    </style>-->
+
+    <!-- Custom BottomNavigationView Style -->
+    <style name="BottomNavigationView_NoShape" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Remove shape appearance to ensure no rounded corners -->
+        <item name="shapeAppearanceOverlay">@null</item>
+        <item name="shapeAppearance">@null</item>
+    </style>
+
+    <!-- Custom style for BottomNavigationView item text -->
+    <style name="BottomNavigationTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">12sp</item> <!-- Customize the text size -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bottom_nav_item_color</item> <!-- Set text color if needed -->
+    </style>
 </resources>
