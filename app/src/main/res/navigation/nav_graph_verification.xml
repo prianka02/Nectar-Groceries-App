@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.prianka.nectar.SignInFragment"
+        android:name="com.prianka.nectar.ui.auth.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/mobileNumFragment"
-        android:name="com.prianka.nectar.MobileNumFragment"
+        android:name="com.prianka.nectar.ui.auth.MobileNumFragment"
         android:label="fragment_mobile_num"
         tools:layout="@layout/fragment_mobile_num" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/verificationFragment"
-        android:name="com.prianka.nectar.VerificationFragment"
+        android:name="com.prianka.nectar.ui.auth.VerificationFragment"
         android:label="fragment_verification"
         tools:layout="@layout/fragment_verification" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/locationFragment"
-        android:name="com.prianka.nectar.LocationFragment"
+        android:name="com.prianka.nectar.ui.auth.LocationFragment"
         android:label="fragment_location"
         tools:layout="@layout/fragment_location" >
         <action

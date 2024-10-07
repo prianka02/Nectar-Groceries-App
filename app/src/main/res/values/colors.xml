@@ -11,5 +11,7 @@
     <color name="social_auth_txt_color">#FCFCFC</color>
     <color name="bottom_nav_color">#FFFFFF</color>
     <color name="bottom_nav_unselected">#181725</color>
-
+    <color name="card_item_text_color">#181725</color>
+    <color name="card_quantity_text_color">#7C7C7C</color>
+    <color name="pulses_groceries_background">#F8A44C</color>
 </resources>

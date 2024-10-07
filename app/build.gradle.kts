@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,4 +51,5 @@ dependencies {
 
     //    Custom OTP dependencies
     implementation (libs.otpview)
+    implementation(libs.coil)
 }

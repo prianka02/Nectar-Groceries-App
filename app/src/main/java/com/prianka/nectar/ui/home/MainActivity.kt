@@ -4,20 +4,13 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import com.google.android.material.navigation.NavigationBarView
-import com.prianka.nectar.AccountFragment
-import com.prianka.nectar.CartFragment
-import com.prianka.nectar.ExploreFragment
-import com.prianka.nectar.FavouriteFragment
 import com.prianka.nectar.R
-import com.prianka.nectar.ShopFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bottomNav: BottomNavigationView

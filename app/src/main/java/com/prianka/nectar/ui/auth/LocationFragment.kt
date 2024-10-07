@@ -1,4 +1,4 @@
-package com.prianka.nectar
+package com.prianka.nectar.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.Spinner
 import androidx.navigation.Navigation
 import com.google.android.material.button.MaterialButton
-import com.prianka.nectar.ui.auth.LoginActivity
+import com.prianka.nectar.R
 
 class LocationFragment : Fragment() {
     private lateinit var submitLocation: MaterialButton

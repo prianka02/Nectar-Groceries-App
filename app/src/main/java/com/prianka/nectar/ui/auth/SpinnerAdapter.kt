@@ -1,4 +1,4 @@
-package com.prianka.nectar
+package com.prianka.nectar.ui.auth
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import com.prianka.nectar.R
 
 class SpinnerAdapter(context: Context, private val zones: Array<String>) :
     ArrayAdapter<String>(context, R.layout.spinner_selected_item, zones) {
