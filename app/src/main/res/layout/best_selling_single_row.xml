@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="173.32dp"
+    android:layout_height="248.5dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/card_background"
+    android:layout_marginStart="25dp"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!-- Grocery Image -->
+        <ImageView
+            android:id="@+id/grocery_image"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:contentDescription="Grocery Images"
+            android:src="@drawable/groceryapple" />
+
+        <!-- Grocery Name -->
+        <TextView
+            android:id="@+id/grocery_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organic Bananas"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/card_item_text_color"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Grocery Description (Quantity) -->
+        <TextView
+            android:id="@+id/grocery_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7pcs, Priceg"
+            android:textColor="@color/card_quantity_text_color"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Price and Add Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/grocery_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$4.99"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/card_item_text_color" />
+
+        <!-- Add Button -->
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add_button_logo"
+            android:contentDescription="Add Product" />
+
+    </RelativeLayout>
+</LinearLayout>

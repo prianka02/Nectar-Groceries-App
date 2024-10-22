@@ -1,14 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShopFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.home.ShopFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/colored_nectar_logo"
+        android:layout_marginTop="30dp"
+        />
+<!--    Location Component-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_icon"
+            />
+        <TextView
+            android:id="@+id/location_set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka, Banasree"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+<!--    Search bar Component-->
+    <ImageView
+        android:id="@+id/search_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        />
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--    Added Nested View from here-->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+<!--            Exclusive offer title layout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclusive Offer"
+                    android:layout_marginStart="25dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/montserratsemibold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="25dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="@color/background_color"
+                    />
+            </RelativeLayout>
 
-</FrameLayout>
+<!--            Exclusive offers Recycler View list-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exclusive_offers_recview"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <!--            Exclusive offer title layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Best Selling"
+                        android:layout_marginStart="25dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/montserratsemibold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="25dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textColor="@color/background_color"
+                        />
+                </RelativeLayout>
+
+                <!--  Best Selling Recycler View list-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/best_selling_recView"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--            <ProgressBar-->
+                <!--                android:id="@+id/progressBar"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:layout_width="30dp"-->
+                <!--                android:layout_height="30dp"/>-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <!--   Groceries title layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Groceries"
+                        android:layout_marginStart="25dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/montserratsemibold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="25dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textColor="@color/background_color"
+                        />
+                </RelativeLayout>
+
+                <!--This will be Groceries Recycler View list-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="248.19dp"
+                    android:layout_height="105dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <!-- RelativeLayout or ConstraintLayout to contain the ImageView and overlays -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/pulses_groceries_background">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerInParent="true"
+                            >
+                            <ImageView
+                                android:id="@+id/grocery_item"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="20dp"
+                                android:src="@drawable/placeholder"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Grocery Name"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/montserratsemibold"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

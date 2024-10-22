@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="43dp"
+    tools:context=".ui.home.ProductDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="371.44dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topdetailspic"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backicon"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="25dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/downloadicon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
+            />
+        <LinearLayout
+            android:layout_width="329.34dp"
+            android:layout_height="199.18dp"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/redapplebig"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Natural Red Apple"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserratsemibold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bookmarkicon"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1kg price"
+        android:layout_marginStart="25dp"
+        android:textSize="14sp"
+        android:textColor="@color/card_quantity_text_color"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_marginTop="5dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus_quantity"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratsemibold"
+                android:layout_margin="13dp"
+                android:padding="10dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+
+                android:background="@drawable/quantity_counter_background"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus_quantity"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$4.99"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/underline_color"
+        />
+<!-- Collapsed item container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <!-- Product Detail (Clickable Row) -->
+            <RelativeLayout
+                android:id="@+id/product_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/product_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Details"
+                    android:textSize="14sp"
+                    android:textColor="@color/card_item_text_color"
+                    android:fontFamily="@font/montserratsemibold" />
+
+                <ImageView
+                    android:id="@+id/product_arrow_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <!-- Hidden Content -->
+            <TextView
+                android:id="@+id/product_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet."
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+        <!-- Separator Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/underline_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+        <!-- Nutritions Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            >
+            <RelativeLayout
+                android:id="@+id/nutrition_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/nutrition_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nutritions"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/nutrition_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="100gr"
+                    android:background="@drawable/nutrition_bg"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/nutrition_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <!-- Hidden Content -->
+            <TextView
+                android:id="@+id/nutrition_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet."
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/underline_color"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            >
+            <!-- Review Section -->
+            <RelativeLayout
+                android:id="@+id/review_details_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/review_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/review_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <!-- Add 5 star icons for review -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/review_star" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/review_star" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/review_star" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/review_star" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/review_star" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/review_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+            <!-- Hidden Content -->
+            <TextView
+                android:id="@+id/review_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet."
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <!-- Add To Basket Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Add To Basket"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserratsemibold"
+        app:cornerRadius="19dp"
+        android:backgroundTint="@color/background_color"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        />
+    </LinearLayout>
+</ScrollView>
