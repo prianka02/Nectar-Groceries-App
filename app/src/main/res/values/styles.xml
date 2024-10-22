@@ -21,4 +21,21 @@
         <item name="android:textColor">@color/bottom_nav_item_color</item> <!-- Set text color if needed -->
     </style>
 
+<!--    Custom Styles for search bar-->
+    <style name="CustomSearchBar" parent="ShapeAppearanceOverlay.Material3.SearchBar">
+        <item name="shapeAppearanceOverlay">@style/CustomSearchBarShapeAppearance</item>
+<!--        <item name="hintTextAppearance">@style/CustomSearchBarHintText</item> &lt;!&ndash; Apply the custom hint text style &ndash;&gt;-->
+    </style>
+
+    <style name="CustomSearchBarShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item> <!-- Adjust the corner radius as needed -->
+    </style>
+
+    <style name="CustomSearchHintTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">12sp</item> <!-- Set your desired hint text size -->
+        <item name="android:fontFamily">@font/montserratsemibold</item> <!-- Custom font -->
+        <item name="android:textColor">@color/card_quantity_text_color</item> <!-- Optional: Hint text color -->
+    </style>
+
 </resources>

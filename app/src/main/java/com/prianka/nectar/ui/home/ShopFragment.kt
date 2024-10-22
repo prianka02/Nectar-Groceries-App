@@ -101,7 +101,7 @@ class ShopFragment : Fragment() {
                 quantity = 7,
                 price = 4.99,
                 imageUrl = ""
-            ),
+            )
         )
 
         //    Setting Adapter in Exclusive offers Recycler view
@@ -111,7 +111,6 @@ class ShopFragment : Fragment() {
                 val intent = Intent(requireContext(), ProductDetailsActivity::class.java)
                 intent.putExtra("grocery", grocery)
                 startActivity(intent)
-
             }
         exclusiveRecView.adapter = exclusiveOffersAdapter
 

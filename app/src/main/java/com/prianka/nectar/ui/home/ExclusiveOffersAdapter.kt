@@ -24,7 +24,7 @@ class ExclusiveOffersAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(con).inflate(R.layout.exclusive_offers_single_row,parent,false)
+        val view = LayoutInflater.from(con).inflate(R.layout.exclusive_offers_single_row, parent,false)
         return ViewHolder(view)
     }
 

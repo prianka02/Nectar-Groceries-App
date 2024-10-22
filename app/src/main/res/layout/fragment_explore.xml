@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".ui.home.ExploreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:text="Find Products"
+         android:textSize="18sp"
+         android:fontFamily="@font/montserratsemibold"
+         android:textStyle="bold"
+         android:layout_marginTop="30dp"/>
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="51.57dp"
+        android:hint="Search Store"
+        app:navigationIcon="@drawable/search_icon"
+        style="@style/CustomSearchBar"
+        android:backgroundTint="@color/search_background_color"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+
+    <!--    Added Nested View from here-->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/explore_product_recView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-</FrameLayout>
+            <!--            <ProgressBar-->
+            <!--                android:id="@+id/progressBar"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"/>-->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
